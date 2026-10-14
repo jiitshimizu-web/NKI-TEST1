@@ -1,0 +1,212 @@
+﻿id,type,question,image,choice1,choice2,choice3,choice4,配点
+ID1,normal,以下の問いに答えなさい,,,,,,
+ID1-2,select,次のうち小数を扱う型はどれか。次の選択肢から最も適切なものを1つ選びなさい。,, char, double, int, String,4
+ID1-3,select,文字列を表す型はどれか。次の選択肢から最も適切なものを1つ選びなさい。,, char, int, String, boolean,4
+ID1-4,select,次の宣言で正しいものはどれか。次の選択肢から最も適切なものを1つ選びなさい。,,"int x = ""10"";",String s = 10;,double d = 3.14;,boolean b = 1;,4
+ID1-5,select,次の式の結果は。 7 % 3 計算結果として正しいものを1つ選びなさい。,,1,2,3,4,4
+ID1-6,select,x=5 x++; 実行後のxは？ インクリメント演算子の動作を考えて答えなさい。,,4,5,6,7,4
+ID1-7,select,次のキャストで正しいものは？,,double d=(double)5;,"int x=(int)""10"";",String s=(String)100;,boolean b=(boolean)1;,4
+ID1-11,select,条件演算子はどれか。次の選択肢から最も適切なものを1つ選びなさい。,,if,? :,switch,for,4
+ID1-12,select,"printf(""%d"",10);
+%dは何を表示する指定子か。",,文字列,整数,小数,文字,3
+ID1-14,select,switch文で各分岐を書くキーワードは？,,if,case,default,break,4
+ID1-15,select,繰り返し回数が決まっている場合によく使う文は？,,if,for,switch,break,4
+ID1-16,select,条件が真の間繰り返す文は？,,for,if,while,switch,4
+ID1-25,select,"次のコードの出力結果はどれか。
+int month = 2;
+
+switch(month){
+
+case 1:
+    System.out.println(""1月"");
+    break;
+
+case 2:
+    System.out.println(""2月"");
+    break;
+
+default:
+    System.out.println(""その他"");
+}",,1月,2月,その他,エラー,3
+ID1-27,select,"次のコードの出力結果はどれか。
+int x = 3;
+
+while(x > 0){
+    System.out.print(x + "" "");
+    x--;
+}",,3 2 1,0 1 2,3,無限ループ,3
+ID1-29,select,"次のコードの出力結果はどれか。
+int[] score = {80, 90, 100};
+
+System.out.println(score[1]);",,80,90,100,エラー,3
+ID1-33,select,"空欄①に入るものを選べ。
+double d = 5.8;
+
+int x = ① d;
+
+System.out.println(x);",,(int),(double),(String),何も書かなくてよい,3
+ID1-37,select,"空欄①に入るものを選べ。
+int i = 1;
+
+①(i <= 5){
+
+    System.out.println(i);
+    i++;
+
+}",,if,switch,while,for,3
+ID1-38,select,"空欄①に入る数字を選べ。
+int[] num = {10,20,30,40};
+
+System.out.println(num[①]);
+出力
+30",,0,1,2,3,3
+ID1-40,select,"配列のすべての要素を表示するため、空欄①に入るものを選べ。
+int[] score = {70, 80, 90, 100};
+
+for(int i = 0; ① ; i++){
+    System.out.println(score[i]);
+}",,i <= score.length,i < score.length,i == score.length,i > score.length,3
+ID1-43,select,"空欄①に入るキーワードを選べ。
+int i = 1;
+
+do{
+
+    System.out.println(i);
+    i++;
+
+}①(i <= 5);",,if,for,while,switch,3
+ID1-44,select,"空欄①に入るものを選べ。
+public static ① add(int a, int b){
+    return a + b;
+}",,void,int,String,boolean,3
+ID1-47,select,"キーボードから名前（文字列）を1行入力するメソッドはどれか。
+Scanner sc = new Scanner(System.in);
+
+String name = sc.①();",,nextInt,nextDouble,nextLine,nextBoolean,3
+ID2,normal,以下の問いに答えなさい,,,,,,
+ID2-1,text,"次のプログラムが正常に動作するように、①へ入るコードを記述しなさい。
+public class Main{
+
+    public static void main(String[] args){
+
+        ①
+
+        System.out.println(age);
+
+    }
+
+}
+実行結果
+20",,,,,,3
+ID2-2,text,"次のプログラムは６０点以上を合格とするプログラムである。①を記述して完成させなさい。
+public class Main{
+
+    public static void main(String[] args){
+
+        int score = 85;
+
+        ①{
+
+            System.out.println(""合格"");
+
+        }
+
+    }
+
+}
+実行結果
+合格",,,,,,3
+ID2-3,text,"以下のプログラムは０～４を表示するプログラムである①へ入るfor文のコードを書きなさい。
+public class Main{
+
+    public static void main(String[] args){
+
+        ①{
+
+            System.out.println(i);
+
+        }
+
+    }
+
+}
+実行結果
+0
+1
+2
+3
+4",,,,,,3
+ID2-4,text,"以下のような配列がある実行結果が表示されるように①へ入るコードを書きなさい。
+int[] num = {10,20,30,40};
+
+System.out.println(①);
+実行結果
+30",,,,,,3
+ID2-6,text,"次のプログラムを実行した結果を書きなさい。
+public class Main{
+
+    public static void main(String[] args){
+
+        int sum = 0;
+
+        for(int i = 1; i <= 5; i++){
+
+            sum += i;
+
+        }
+
+        System.out.println(sum);
+
+    }
+
+}",,,,,,3
+ID2-7,text,"次のプログラムを実行した結果を書きなさい。
+public class Main{
+
+    public static void main(String[] args){
+
+        int x = 5;
+
+        if(x % 2 == 0){
+            System.out.println(""ぐうすう"");
+        }else{
+            System.out.println(""きすう"");
+        }
+
+    }
+
+}",,,,,,3
+ID2-8,text,"次のプログラムの実行結果を書きなさい。
+int[] num = {2,4,6};
+
+for(int i=0;i<num.length;i++){
+
+    System.out.print(num[i] + "" "");
+
+}",,,,,,3
+ID2-9,text,"次のプログラムの実行結果を書きなさい。
+public class Main{
+
+    public static int calc(int x){
+
+        return x * 3;
+
+    }
+
+    public static void main(String[] args){
+
+        System.out.println(calc(4));
+
+    }
+
+}",,,,,,3
+ID2-10,text,"次のプログラムの出力結果を書きなさい。
+int total = 0;
+
+for(int i=1;i<=3;i++){
+
+    total += i;
+
+}
+
+System.out.println(total);",,,,,,3

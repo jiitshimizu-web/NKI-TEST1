@@ -1,0 +1,166 @@
+﻿id,type,question,image,choice1,choice2,choice3,choice4,配点
+ID1,select,JavaScriptをHTMLファイル内に直接記述するために使用するタグはどれか。,,<javascript>,<script>,<js>,<code>,4
+ID2,select,JavaScriptファイル「sample.js」をHTMLから読み込む記述として正しいものはどれか。,,"<script href=""sample.js""></script>","<script src=""sample.js""></script>","<javascript src=""sample.js"">","<link src=""sample.js"">",4
+ID3,select,JavaScriptで画面にメッセージを表示する命令は（　　　）である。,,display(),print(),alert(),show(),4
+ID4,select,JavaScriptでコンソールへ文字を表示する命令は（　　　）である。,,console.show(),document.write(),print(),display(),4
+ID5,select,"変数nameへ「Taro」を代入するコードとして適切なものを選べ。
+_____ name = ""Taro"";",,int,let,string,char,4
+ID6,select,次のうち、JavaScriptの変数宣言として現在最も推奨されるものはどれか。,,var,let,int,value,3
+ID7,select,「xが10以上である」という条件式として正しいものを選びなさい。,,x => 10,x >= 10,x =< 10,x <> 10,3
+ID8,select,"let x = 8;
+
+if(x < 10){
+    document.write(""A"");
+}else{
+    document.write(""B"");
+}
+表示されるものはどれか。",,A,B,8,何も表示されない,3
+ID9,select,"let age = 19;
+
+if(age >= 20){
+    document.write(""成人"");
+}else{
+    document.write(""未成年"");
+}
+表示結果はどれか。",,成人,未成年,19,エラー,3
+ID10,select,「両方の条件を満たす」論理演算子はどれか。,,||,!,&&,==,3
+ID11,select,"let x = 12;
+
+if(x > 5 && x < 20){
+    document.write(""OK"");
+}else{
+    document.write(""NG"");
+}
+表示結果はどれか。",,NG,OK,12,エラー,3
+ID12,select,"次のコードで「OK」が表示されるように空欄を埋めよ。
+let password = ""abc123"";
+
+if(password ______ ""abc123""){
+    document.write(""OK"");
+}",,=,==,++,>=,3
+ID13,select,"次のコードの説明として正しいものはどれか。
+let temp = 35;
+
+if(temp >= 35){
+    document.write(""暑い"");
+}else{
+    document.write(""快適"");
+}",,気温が35℃以上なら「暑い」と表示する。,気温が35℃未満なら「暑い」と表示する。,必ず「快適」が表示される。,条件式が誤っているため実行できない。,4
+ID14,select,"次のコードを実行した結果として正しいものはどれか。
+let score = 65;
+
+if(score >= 80){
+    document.write(""A"");
+}else if(score >= 60){
+    document.write(""B"");
+}else{
+    document.write(""C"");
+}",,A,B,C,エラー,3
+ID15,select,"次のコードを実行した結果として正しいものはどれか。
+for(let i = 1; i <= 5; i++){
+    document.write(i);
+}",,"1
+2
+3
+4
+5","0
+1
+2
+3
+4","1
+2
+3
+4",5,3
+ID16,select,"次のコードを実行した結果はどれか。
+let total = 0;
+
+for(let i = 1; i <= 3; i++){
+    total += i;
+}
+
+document.write(total);",,3,5,6,9,3
+ID17,select,次のうち、JavaScriptで配列を作成する正しい記述はどれか。,,"let fruit = (""りんご"",""みかん"");","let fruit = [""りんご"",""みかん""];","let fruit = {""りんご"",""みかん""};","let fruit = <りんご,みかん>;",3
+ID18,select,"次のプログラムで「みかん」を表示したい。
+let fruit = [""りんご"",""みかん"",""ぶどう""];
+
+document.write(fruit[ ___ ]);",,0,1,2,3,3
+ID19,select,"次のコードを実行した結果はどれか。
+let score = [70,80,90];
+
+for(let i=0;i<score.length;i++){
+    document.write(score[i]);
+}",,"70
+80
+90","0
+1
+2","90
+80
+70","70
+80",3
+ID20,select,JavaScriptで関数を定義するために使用するキーワードはどれか。,,method,func,function,define,3
+ID21,select,return の役割として最も適切なものはどれか。,,画面へ表示する,関数を繰り返し実行する,関数の処理結果を呼び出し元へ返す,変数を削除する,3
+ID22,select,"次のコードは、id=""msg"" の要素を書き換えるプログラムである。
+空欄を埋めなさい。
+document.getElementById(""msg"").________ = ""こんにちは"";",,value,innerHTML,style,onclick,3
+ID23,select,"入力フォームの値を取得したい。
+空欄を埋めなさい。
+<input id=""name"">
+
+<script>
+let data =
+document.getElementById(""name"").________;
+</script>",,text,innerHTML,value,length,4
+ID24,select,"次のHTMLを実行した結果として正しいものはどれか。
+<input id=""num"" value=""50"">
+
+<script>
+document.write(
+document.getElementById(""num"").value
+);
+</script>",,num,50,value,エラー,4
+ID25,select,"ボタンを押すと見出しを書き換えたい。
+空欄を埋めなさい。
+<h1 id=""title"">ようこそ</h1>
+
+<button onclick=""change()"">
+変更
+</button>
+
+<script>
+function change(){
+
+document.getElementById(""title"")
+.________=""JavaScript"";
+
+}
+</script>",,value,innerHTML,length,src,4
+ID26,select,"次のHTMLを実行し、「表示」ボタンをクリックした結果として正しいものはどれか。
+<input id=""name"" value=""山田"">
+
+<button onclick=""show()"">
+表示
+</button>
+
+<p id=""msg""></p>
+
+<script>
+
+function show(){
+
+let n =
+document.getElementById(""name"").value;
+
+document.getElementById(""msg"")
+.innerHTML=n;
+
+}
+
+</script>",,入力欄の内容が <p> に表示される。,入力欄が削除される。,ページが更新される。,エラーになる。,4
+ID27,select,HTML要素を新しく作成するために使用するメソッドはどれか。,,document.newElement(),document.createElement(),document.addTag(),document.makeTag(),3
+ID28,select,"作成した要素をHTMLへ追加するメソッドはどれか。
+let p = document.createElement(""p"");
+
+document.body.________(p);",,appendChild,innerHTML,addElement,insertHTML,3
+ID29,select,"HTML要素の文字色を赤色へ変更したい。
+正しいコードはどれか。",,"element.color=""red"";","element.style.color=""red"";","element.text=""red"";","element.font=""red"";",3
+ID30,select,イベントリスナーを登録するために使用するメソッドはどれか。,,addEventListener(),eventListener(),createEvent(),onClick(),3

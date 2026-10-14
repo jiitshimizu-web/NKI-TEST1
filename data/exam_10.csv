@@ -1,0 +1,64 @@
+﻿id,type,question,image,choice1,choice2,choice3,choice4,配点
+ID1,select,HTMLで改行を行うタグはどれですか。,,A. <hr>,B. <br>,C. <p>,D. <head>,3
+ID3,select,"HTML5で文書の種類を宣言する記述はどれですか。
+<!__________>",,A. HTML5,B. DOCTYPE html,,C. html5,3
+ID6,select,最も大きい見出しを表すタグはどれですか。,,A. <h6>,B. <head>,C. <h1>,D. <title>,3
+ID7,select,段落を作るタグはどれですか。,,A. <br>,B. <p>,C. <hr>,,3
+ID9,text,「HTML入門」という文字を一番大きな見出しで表示してください。,,,,,,4
+ID15,text,「HTML」を太字で表示してください。,,,,,,4
+ID20,select,"次のHTMLを表示した結果として正しいものを選びなさい。
+<p>
+H<sub>2</sub>O は
+<b>水</b>です。
+</p>",,"H2O は 水です。
+（すべて通常文字）","H₂O は 水です。
+「水」は太字","H²O は 水です。
+「水」は斜体","H₂O は 水です。
+「水」に取り消し線",3
+ID21,select,Webページに画像を表示するタグはどれですか。,,A. <image>,B. <picture>,C. <img>,D. <src>,3
+ID22,select,画像ファイルを指定する属性はどれですか。,,A. href,B. alt,C. src,D. target,3
+ID23,select,画像が表示できなかった場合に表示する説明文を設定する属性はどれですか。,,A. title,B. alt,C. href,,3
+ID24,select,次のうち、画像ファイルの拡張子として一般的ではないものはどれですか。,,A. .jpg,B. .png,C. .gif,D. .html,3
+ID25,text,「cat.jpg」という画像を表示し、代替テキストを「猫」としてください。,,,,,,4
+ID28,text,「OpenAI」という文字をクリックすると https://openai.com に移動するリンクを作成してください。,,,,,,4
+ID29,select,画像をクリックすると別のページへ移動するHTMLとして正しいものはどれですか。,,"<img href=""cat.jpg"">","<a href=""page.html"">
+    <img src=""cat.jpg"" alt=""猫"">
+</a>","<img link=""page.html"">","<a src=""page.html"">
+    <img src=""cat.jpg"">
+</a>",3
+ID31,select,リンクを新しいタブで開くために使用する属性はどれですか。,,A. href,B. src,"C. target=""_blank""",D. style,3
+ID34,select,CSSとは何を指定するための技術ですか。,,A. データベース,B. ページの見た目,C. サーバー,D. プログラム,3
+ID36,select,HTML内で複数のCSSを書くために使用するタグはどれですか。,,A. <script>,B. <style>,C. <css>,,3
+ID37,select,同じデザインを複数の要素に適用したい場合に使用する属性はどれですか。,,A. id,B. class,C. href,D. src,3
+ID39,text,"次のCSSを書いてください。
+条件
+•	class名は blue
+•	文字色を青にする",,,,,,5
+ID40,select,"次のHTMLがあります。
+<style>
+.red{
+    color:red;
+}
+</style>
+
+<p class=""red"">
+HTMLを学習します。
+</p>
+表示結果として正しいものを選びなさい。",,文字が赤色になる。,文字が青色になる。,背景が赤色になる。,文字が太字になる。,3
+ID42,select,文字の色を指定するCSSプロパティはどれですか。,,A. background-color,B. font-color,C. color,D. text-color,3
+ID43,select,文字を太字にするCSSプロパティはどれですか。,,A. font-style,B. font-weight,C. text-decoration,D. font-size,3
+ID44,text,文字色を青色にし、文字サイズを20pxにするCSSを書いてください。,,,,,,5
+ID47,select,フォント（書体）を指定するCSSプロパティはどれですか。,,A. font-style,B. font-family,C. font-weight,,3
+ID48,select,行の高さを指定するCSSプロパティはどれですか。,,A. font-size,B. line-height,C. text-align,D. margin,3
+ID49,text,文字を中央揃えにするCSSを書いてください。,,,,,,4
+ID50,select,"次のCSSがあります。
+.title{
+    color:red;
+    font-size:30px;
+    font-weight:bold;
+    text-align:center;
+}
+このCSSを適用した文字の表示として正しいものはどれですか。",,赤色・30px・太字・中央揃え,青色・30px・太字・左揃え,赤色・20px・斜体・中央揃え,黒色・30px・太字・中央揃え,3
+ID51,select,コンピューターの画面で色を表現する光の三原色として正しい組み合わせはどれですか。,,A. 赤・青・黄,B. 赤・緑・青,C. 黄・赤・黒,D. 青・黄・緑,3
+ID52,select,赤色を16進数カラーコードで表したものはどれですか。,,A. #0000FF,B. #00FF00,C. #FF0000,D. #FFFFFF,3
+ID56,text,背景色を水色（lightblue）にするCSSを書いてください。,,,,,,4

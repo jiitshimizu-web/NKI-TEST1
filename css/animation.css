@@ -1,0 +1,45 @@
+﻿#topTitle::before{
+    content:"";
+    position:absolute;
+    top:-60%;
+    left:-60%;
+    width:220%;
+    height:220%;
+    background:radial-gradient(
+        circle,
+        rgba(255,255,255,0.18) 0%,
+        transparent 60%
+    );
+
+    transform:rotate(25deg);
+
+    animation:shine 6s infinite linear;
+}
+
+@keyframes shine{
+    0%{
+        transform:translateX(-10%) rotate(25deg);
+    }
+
+    50%{
+        transform:translateX(10%) rotate(25deg);
+    }
+
+    100%{
+        transform:translateX(-10%) rotate(25deg);
+    }
+}
+
+@keyframes flash{
+    from{
+        background:rgba(180,0,0,0.85);
+    }
+
+    to{
+        background:rgba(255,0,0,0.95);
+    }
+}
+
+#warningOverlay{
+    animation:flash 0.7s infinite alternate;
+}

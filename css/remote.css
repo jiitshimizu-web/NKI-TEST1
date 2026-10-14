@@ -1,0 +1,17 @@
+body{min-height:100vh;height:auto;background:#fff;color:#222;}
+#startScreen{height:auto;min-height:55vh;padding:24px 16px;box-sizing:border-box;}
+#main{height:calc(100dvh - 150px);min-height:420px;}
+#endScreen{height:auto;min-height:60vh;padding:24px 16px;box-sizing:border-box;text-align:center;gap:12px;}
+#endMessage{overflow-wrap:anywhere;max-width:850px;font-size:18px;}
+button{font-size:18px;border:0;border-radius:6px;padding:12px 18px;background:#2a5298;color:white;cursor:pointer;}
+button:disabled{opacity:.5;}
+.answer-actions{max-width:850px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+.save-help{font-size:16px;line-height:1.7;max-width:720px;margin:12px auto;}
+#saveStatus{width:100%;font-size:16px;}
+.producer{text-align:center;padding:10px;font-size:13px;color:#555;}
+header{gap:12px;align-items:center;}#userInfo{overflow-wrap:anywhere;}
+#examForm{overscroll-behavior:contain;}input[type="radio"]{margin-left:20px;margin-right:40px;}
+@media(max-width:600px){#topTitle{padding:12px 8px;}#topTitle h1{font-size:20px;}#topTitle h2{font-size:16px;}#main{height:calc(100dvh - 115px);}#examForm{padding:12px;}label{margin-left:0;}header{font-size:14px;}#timer{font-size:20px;white-space:nowrap;}.group-block{padding:8px;}textarea{white-space:pre-wrap;}button{min-height:44px;}}
+.capture-setup{max-width:720px;width:100%;border:1px solid #b8cce7;border-radius:8px;padding:14px;box-sizing:border-box;background:#f5f8fc;}
+.capture-setup h3{margin:0 0 10px;}.capture-setup label{font-size:16px;margin:8px 0;flex-wrap:wrap;}.capture-setup select{font-size:16px;padding:8px;max-width:100%;}.capture-setup p{font-size:14px;line-height:1.6;}
+#captureBar{display:flex;gap:12px;align-items:center;background:#edf3fb;padding:8px 12px;flex-shrink:0;}#capturePreview{width:96px;height:72px;object-fit:contain;background:#222;transform:scaleX(-1);}#captureBar p{margin:3px 0;}#captureStatus{font-size:14px;}#captureCount,.capture-small{font-size:13px;line-height:1.6;}#captureResult{max-width:850px;border:1px solid #b8cce7;padding:16px;box-sizing:border-box;}#captureResult[hidden]{display:none;}#captureResult button{margin-bottom:8px;}#captureResultInfo{font-size:16px;overflow-wrap:anywhere;}#captureSaveStatus{font-size:14px;}

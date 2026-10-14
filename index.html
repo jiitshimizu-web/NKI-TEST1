@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>試験システム</title>
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/animation.css">
+<link rel="stylesheet" href="css/remote.css">
+</head>
+
+<body>
+
+<div id="warningOverlay">
+    <h1>⚠ 警告</h1>
+    <p id="warningText">不正行為が検出されました</p>
+    <button onclick="closeWarning()">閉じる</button>
+</div>
+
+<div id="topTitle">
+    <h1>専門学校ニホン国際ＩＴカレッジ</h1>
+    <h2>遠隔受験・答案ファイル保存版</h2>
+</div>
+
+<div id="startScreen">
+    <h2>試験開始</h2>
+
+    <input type="text" id="studentId" placeholder="受験番号／学籍番号">
+    <input type="text" id="studentName" placeholder="名前">
+
+    <!-- 追加 -->
+    <input type="text" id="examCode" placeholder="試験コード">
+
+    <button onclick="startExam()">
+        試験開始
+    </button>
+</div>
+
+<div id="main">
+
+<header>
+    <div id="userInfo"></div>
+    <div><span id="timer">--:--</span></div>
+</header>
+
+<div class="file-area">
+
+    <!-- 手動読込は残す -->
+    問題は試験コードで自動読み込みします。
+    <input type="file" id="fileInput">
+
+    <div id="loadedExamInfo"
+         style="margin-top:8px;color:#2a5298;font-weight:bold;">
+    </div>
+
+</div>
+
+<form id="examForm"></form>
+
+<footer>
+    <button onclick="submitExam(false, '通常提出')">
+        提出
+    </button>
+</footer>
+
+<div id="copyright">
+    © 2026 Nihon International IT College
+</div>
+
+</div>
+
+<div id="endScreen">
+    <h2>試験終了</h2>
+
+    <p id="endMessage"></p>
+
+    <p class="reload-text">
+        答案CSVを保存し、先生へメールに添付して送信してください。
+    </p>
+</div>
+
+<script src="js/state.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/parser.js"></script>
+<script src="js/renderer.js"></script>
+<script src="js/timer.js"></script>
+<script src="js/events.js"></script>
+<script src="js/exam.js"></script>
+<script src="js/app.js"></script>
+
+<script src="js/bundled-data.js"></script>
+<script src="js/remote.js"></script>
+<script src="js/camera.js"></script>
+<div class="producer">Produced by Yoshihiro Shimizu</div>
+</body>
+</html>
